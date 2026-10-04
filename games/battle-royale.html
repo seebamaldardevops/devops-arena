@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Royale - DEVOPS ARENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <header class="game-header">
+        <a class="back-link" href="../index.html">← Back to Arena</a>
+        <h1>BATTLE ROYALE</h1>
+        <p>WASD / Arrows to move • Mouse to aim • Click or Space to shoot</p>
+    </header>
+    <main class="game-main">
+        <section class="game-panel">
+            <div class="hud">
+                <span>Health: <b id="health">100</b></span>
+                <span>Score: <b id="score">0</b></span>
+                <span>Kills: <b id="kills">0</b></span>
+            </div>
+            <canvas id="game" width="640" height="480"></canvas>
+            <button id="restart" class="play-btn">Restart</button>
+        </section>
+    </main>
+    <script src="../js/battle-royale.js"></script>
+</body>
+</html>

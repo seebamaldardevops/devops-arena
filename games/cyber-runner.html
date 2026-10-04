@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Runner - DEVOPS ARENA</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <header class="game-header">
+        <a class="back-link" href="../index.html">← Back to Arena</a>
+        <h1>CYBER RUNNER</h1>
+        <p>A / D or Left / Right to move • Space to jump</p>
+    </header>
+    <main class="game-main">
+        <section class="game-panel">
+            <div class="hud">
+                <span>Score: <b id="score">0</b></span>
+                <span>Coins: <b id="coins">0</b></span>
+                <span>Speed: <b id="speed">5</b></span>
+            </div>
+            <canvas id="game" width="700" height="300"></canvas>
+            <button id="restart" class="play-btn">Restart</button>
+        </section>
+    </main>
+    <script src="../js/cyber-runner.js"></script>
+</body>
+</html>
