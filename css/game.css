@@ -1,0 +1,122 @@
+.game-header {
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.game-header h1 {
+    font-size: 2.2rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--text-soft);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #7a6ff0;
+}
+
+.game-main {
+    max-width: 760px;
+}
+
+.game-panel {
+    text-align: center;
+}
+
+.hud {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.hud b {
+    color: #7a6ff0;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(120, 130, 180, 0.15);
+}
+
+button.play-btn {
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Terminal Hack */
+.target {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.target span {
+    padding: 8px 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: Consolas, monospace;
+    font-weight: 700;
+}
+
+.target span.current {
+    outline: 2px solid var(--purple);
+}
+
+.target span.done {
+    background: #dff5e6;
+    color: #6b7280;
+}
+
+.hex-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 380px;
+    margin: 0 auto 20px;
+}
+
+.hex-grid button {
+    padding: 16px 0;
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: Consolas, monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.hex-grid button:hover:not(:disabled) {
+    transform: translateY(-3px);
+    background: #fff;
+}
+
+.hex-grid button.done {
+    background: #dff5e6;
+    color: #9ca3af;
+}
+
+.hex-grid button.wrong {
+    background: #fde2e2;
+}
+
+#message {
+    min-height: 28px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
